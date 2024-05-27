@@ -1,0 +1,103 @@
+.body{
+    position: relative;
+    width: 100%;
+    top: 124px;
+}
+
+.brands-header-content > p:first-child{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    justify-content: center;
+    text-align: end;
+
+}
+.brands-header-content-description{
+    font-size: 12px !important;
+    font-weight: 400;
+    text-align: justify;
+    direction: rtl;
+}
+
+.brands-header-content-description{
+    font-size: 12px !important;
+    font-weight: 400;
+    text-align: justify;
+    direction: rtl;
+}
+
+.brands-header-content-btn-row > div:last-child{
+    background-color: #D7D58A;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    border: 1px solid #D7D58A;
+    line-height: 30px;
+    width: 49%;
+    text-align: center;
+}
+.brands-header-content-btn-row > div:first-child{
+    background-color: white;
+    font-size: 18px;
+    font-weight: 400;
+    color: #D7D58A !important;
+    border: 1px solid #D7D58A;
+    line-height: 30px;
+    width: 49%;
+    text-align: center;
+}
+
+.brands-header-content-box{
+    padding: 30px 80px;
+}
+
+.brands-header-content{
+    gap: 10px;
+}
+.brands-icon-gallery{
+    padding: 20px 80px;
+}
+.brands-icon-gallery-row{
+    flex-wrap: nowrap;
+    gap: 16px;
+    justify-content: center;
+}
+.brands-icon-gallery-col{
+    border: 1px solid #BDBDBD;
+}
+.brands-icon-gallery{
+display: flex;
+flex-direction: column;
+gap: 16PX;
+}
+@media (max-width: 575.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+    .brands-icon-gallery-row{
+        flex-wrap: wrap;
+    }
+    .brands-icon-gallery{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .brands-header-content-box{
+        padding: 20px 30px;
+    }
+    .body{
+        position: relative;
+        width: 100%;
+        top: 85px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 1399.98px) {
+
+}

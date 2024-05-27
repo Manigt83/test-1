@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./product-details.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./swiper.js"></script>
+    <script src="./swiper-2.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar flex-wrap py-0 p-0 navbar-expand-lg bg-body-tertiary" style="background-color: #FFFFFF !important; border-bottom :1px solid #21212149;position: fixed;width: 100%;top: 0; z-index: 999;">
+            <div class="post-info-navbar">
+                <p>ارسال رایگان برای سفارشات بیشتر از 500,000 تومان</p>
+            </div>
+            <div class="rate-info-navbar col-12 d-flex px-5 justify-content-center ">
+                <div class="col-4 col d-flex  justify-content-start "><p>0.0/5</p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <div class="col-md-4 col-12 col d-flex justify-content-center "><p>ارسال اکسپرس به تمامی نقاط جهان</p><i class="bi bi-globe"></i></div>
+                <div class="col-4 col d-flex justify-content-end "><p>انجام یک‌روزه حکاکی روی قلم</p><i class="bi bi-pen"></i></div>
+            </div>
+            <div class="container-fluid col-12 m-0 py-2">
+              <!-- <a class="navbar-brand col-4 m-0 p-0" href="#">Navbar</a> -->
+        
+              <div class="icon-nav col-3  m-0 p-0 justify-content-lg-start justify-content-center mobile-nav">
+                <div class="icon-box-nav">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="icon-box-nav">
+                    <i class="bi bi-bag"></i>
+                </div>
+              </div>
+        
+              <div class="col-6 m-0 p-0 justify-content-lg-end justify-content-center mobile-nav">
+                <a class="navbar-brand m-0 p-0" href="./"><img src="./img/logo.svg"></a>
+              </div>
+        
+              <button class="navbar-toggler col-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse col-12 m-0 p-0 px-lg-5 px-0" id="navbarSupportedContent">
+                <div class="icon-nav d-flex col-lg-3 col-12 m-0 p-0 justify-content-lg-start justify-content-center mt-lg-0 mt-3">
+                    <div class="icon-box-nav">
+                        <img src="./img/flag/ir.svg" alt="">
+                    </div>
+                    <div class="icon-box-nav">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <div class="icon-box-nav">
+                        <i class="bi bi-chat"></i>
+                    </div>
+                    <div class="icon-box-nav desktop-nav">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="icon-box-nav desktop-nav">
+                        <i class="bi bi-bag"></i>
+                    </div>
+                </div>
+        
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-6 col-12 p-0 justify-content-center text-center ">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">خانه</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">برندها</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                        <a class="nav-link">محصولات</a>
+                        <div class="dropdown-content">
+                          <div class="dropdown-content-inner d-flex flex-wrap col-12 p-0 m-0">
+                            <div class="flex-wrap d-lg-flex d-none col-lg-3 col-12 p-0 m-0">
+                                <img src="./img/image 21.png" alt="" class="d-flex w-100">
+                                <a href="#" class="d-flex mt-3" style="font-size: 12px;"><i class="bi bi-arrow-left"></i>جدیدترین، تورنادو کالیفرنیا ۴۱</a>
+                            </div>
+                            <div class="d-flex flex-wrap content-column col-lg-9 col-12 p-0 m-0 justify-content-end ">
+                                <div class="col-sm-4 col-12 content-column-col p-0 m-0 px-2">
+                                    <P class="content-column-col-header">قلم‌های خطاطی</P>
+                                    <a>قلم‌های فانیتن</a>
+                                    <a>قلم‌های بال‌پوینت</a>
+                                    <a>ست‌های قلم</a>
+                                    <a>قلم‌های رولربال</a>
+                                    <a>قلم‌های خطاطی</a>
+                                    <a>قلم‌های فانیتن</a>
+                                    <a>قلم‌های بال‌پوینت</a>
+                                    <a>ست‌های قلم</a>
+                                    <a href="#" class="d-flex" style="font-size: 12px;"><i class="bi bi-arrow-left"></i>دیدن همه‌ی قلم‌ها</a>
+                                </div>
+                                <div class="col-sm-4 col-12 content-column-col p-0 m-0 px-2">
+                                    <P class="content-column-col-header">قیمت‌ها</P>
+                                    <a>100,000 تومان - 200,000 تومان</a>
+                                    <a>100,000,000 تومان - 200,000,000 تومان</a>
+                                    <a>100,000,000 تومان - 200,000,000 تومان</a>
+                                    <a>100,000,000 تومان - 200,000,000 تومان</a>
+                                    <a>100,000,000 تومان - 200,000,000 تومان</a>
+                                    <a href="#" class="d-flex" style="font-size: 12px;">فروش</a>
+                                </div>
+                                <div class="col-sm-4 col-12 content-column-col p-0 m-0 px-2">
+                                    <P class="content-column-col-header">قلم‌های خطاطی</P>
+                                    <a>قلم‌های فانیتن</a>
+                                    <a>قلم‌های بال‌پوینت</a>
+                                    <a>ست‌های قلم</a>
+                                    <a>قلم‌های رولربال</a>
+                                    <a>قلم‌های خطاطی</a>
+                                    <a>قلم‌های فانیتن</a>
+                                    <a>قلم‌های بال‌پوینت</a>
+                                    <a>ست‌های قلم</a>
+                                    <a href="#" class="d-flex" style="font-size: 12px;"><i class="bi bi-arrow-left"></i>دیدن همه‌ی قلم‌ها</a>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">تماس با ما</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">اخبار</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="direction: rtl; color: #BA985F;">دست خط من بشناس !</a>
+                  </li>
+                </ul>
+        
+                <div class="d-flex col-lg-3 col-12 m-0 p-0 justify-content-lg-end justify-content-center desktop-nav">
+                    <a class="navbar-brand m-0 p-0" href="./"><img src="./img/logo.svg"></a>
+                </div>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="body">
+        <div class="d-flex col-12 flex-row product-detail-page">
+            <div class="d-flex col-md-6 col-12 product-detail-box flex-column">
+                <div class="product-detail-box-1">
+                  <img class="d-flex d-md-none " src="./img/product-details/image 12.png" alt="">
+                    <p class="d-none d-md-flex">SKU J-128318011</p>
+                    <p>قلم Parker IM Blue Chrome Trim Fountain Pen</p>
+                    <p>120,000تومان</p>
+                    <p>موجود در فروشگاه</p>
+                </div>
+                <div class="product-detail-box-2">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex" style="gap: 4px;">
+                            <p>رنگ انتخاب شده:</p><p>رنگ</p>
+                        </div>
+                        <div class="d-flex" style="gap: 4px;">
+                            <div class="d-flex pick-color-border">
+                                <div class="color-gold" onclick="togglePickColorBorderGold(this)"></div>
+                            </div>
+                            <div class="d-flex pick-color-border">
+                                <div class="color-black" onclick="togglePickColorBorderBlack(this)"></div>
+                            </div>
+                            <div class="d-flex pick-color-border">
+                                <div class="color-grey" onclick="togglePickColorBorderGrey(this)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column " style="gap: 8px;">
+                      <div class="d-flex" style="gap: 4px;">
+                        <p class="pen-size d-flex">اندازه قلم</p><a class="size-guide d-flex">راهنما اندازه‌ها</a>
+                      </div>
+                      <div>
+                        <div class="btn-group ">
+                          <button type="button" class="btn  dropdown-toggle dropdown-btn-pill" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bi bi-chevron-down"></i>اندازه
+                          </button>
+                          <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">کوچک</a></li>
+                          <li><a class="dropdown-item" href="#">متوسط</a></li>
+                          <li><a class="dropdown-item" href="#">بزرگ</a></li>
+                          </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column " style="gap: 8px;">
+                      <div class="d-flex" style="gap: 4px;">
+                        <p class="pen-size d-flex">حکاکی روی قلم - انجام در یک روز</p><a class="size-guide d-flex">اطلاعات بیشتر</a>
+                      </div>
+                      <div class="engraving-pay-btn">
+                        <p class="engraving-pay"><i class="bi bi-pen"></i>حکاکی روی قلم (+Nanتومان)</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="d-flex for-gift-row" style="gap: 4px;"><p class="d-flex" style="gap: 6px; align-items:center; direction: rtl;"><input type="checkbox">آیا این قلم را برای هدیه می‌خواهید؟</p><p class="d-flex" style="gap: 4px; align-items:center "><i class="bi bi-gift"></i>+Nanتومان</p><a class="size-guide d-flex">اطلاعات بیشتر</a></div>
+                    </div>
+                </div>
+                <div class="product-detail-box-3">
+                  <div class="col-12 d-flex gap-sm-5 gap-3 flex-row-reverse flex-sm-row  flex-wrap flex-sm-nowrap justify-content-sm-start justify-content-center  ">
+                    <div class="add-to-cart-btn col-sm-6 col-12">
+                      <p class="d-flex gap-3 align-items-center"><i class="bi bi-bag-check"></i>افزودن به سبد خرید</p>
+                  </div>
+                  <div class='ctrl gap-2 col-sm-6 col-12'>
+                    <p>تعداد:</p>
+                    <div class="d-flex ">
+                      <div class='ctrl__button ctrl__button--decrement'>&ndash;</div>
+                      <div class='ctrl__counter'>
+                        <input class='ctrl__counter-input' maxlength='10' type='text' value='0'>
+                        <div class='ctrl__counter-num'>0</div>
+                      </div>
+                      <div class='ctrl__button ctrl__button--increment'>+</div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="deliver-box">
+                    <div class="col-12 d-flex gap-3">
+                      <div class="col-2 d-flex justify-content-center align-items-center ">
+                        <img src="./img/image 13.png" alt="">
+                      </div>
+                      <div class="col-10 deliver-box-description">
+                        <p>ارسال به تمامی نقاط ایران - ارسال اکسپرس</p>
+                        <p>۴ ساعت پیش‌بینی زمان برای آماده‌سازی این محصول</p>
+                        <a>دیدن همه امکانات حمل و نقل کالا</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <nav>
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true">جزئیات محصول</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="false">نظرات (۲۰)</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button" role="tab" aria-controls="nav-3" aria-selected="false">حمل و نقل ، مرجوع کالا</button>
+                      </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+                        <div class="d-flex gap-3 flex-column py-3">
+                          <div class="ink-color-row d-flex">
+                            <div class="ink-color"></div><p>رنگ جوهر: آبی</p>
+                          </div>
+                          <div class="d-flex ">
+                            <p>پارکر IM با ساختار فلزی سنگین که حسی باکیفیت ایجاد می‌کند، نوید تاثیرگذاری را می‌دهد. سایه تیره آبی که برای این خودکار انتخاب شده است، در مقایسه با استفاده سخاوتمندانه از تزئینات کروم روشن، مرموزتر به نظر می رسد. برای هر کسی که یک خودکار جدید می‌خرد، حتما باید آن را ببیند.</p>
+                          </div>
+                          <div class="d-flex flex-column ">
+                            <p style="font-weight: 700;">امکانات کلیدی</p>
+                            <ul style="margin: 1rem 2rem">
+                              <li>لاک آبی تیره با تزئینات کرومی</li>
+                              <li>درپوش و بشکه فلزی محکم</li>
+                              <li>قابل نصب با مبدل برای استفاده با جوهر بطری (فروش جداگانه)</li>
+                              <li>Nib برای ارائه تجربه نوشتن بهینه برای نویسندگان راست و چپ طراحی شده است</li>
+                              <li>وزن: 31 گرم</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">...</div>
+                      <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">3</div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+            </div>
+            <div class="d-none flex-wrap col-6 d-md-flex">
+                <div class="d-flex"><img src="./img/product-details/image 12.png" alt="" class="w-100"></div>
+                <div class="d-flex"><img src="./img/product-details/image 14.png" alt="" class="w-100"></div>
+                <div class="d-flex"> <img src="./img/product-details/image 15.png" alt="" class="w-100"></div>
+                <div class="d-flex"><img src="./img/product-details/image 16.png" alt="" class="w-100"></div>
+            </div>
+        </div>
+
+          <div class="Newsletter-box">
+            <div class="d-flex col-12 justify-content-center">
+              <div class="d-flex col-md-8 col-12 justify-content-center flex-column Newsletter-box-content">
+                  <p class="d-flex m-0 justify-content-center">به خبرنامه ما بپیوندید</p>
+                  <p class="d-flex m-0 justify-content-center" style="direction: rtl; ">جدیدترین ترندها و خودکار ها بسته به روحیه و شخصیت بیابید.</p>
+                  <div class="control d-flex m-0 justify-content-center">
+                    <input type="submit" id="submit" value="ثبت نام">
+                    <input type="text" id="fname" placeholder="ایمیل خود را وارد کنید">
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+</body>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdowns = document.querySelectorAll(".dropdown");
+    
+      dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener("mouseenter", function() {
+          this.querySelector(".dropdown-content").classList.add("show-drowp");
+        });
+    
+        dropdown.addEventListener("mouseleave", function() {
+          this.querySelector(".dropdown-content").classList.remove("show-drowp");
+        });
+      });
+    });
+
+    var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+triggerTabList.forEach(function (triggerEl) {
+  var tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', function (event) {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+
+var triggerEl = document.querySelector('#myTab a[href="#profile"]')
+bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+
+var triggerFirstTabEl = document.querySelector('#myTab li:first-child a')
+bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
+
+    
+</script>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    <script>
+       function togglePickColorBorderGold(element) {
+        var parent = element.parentNode;
+        if (parent.classList.contains("pick-color-border-gold")) {
+            parent.classList.remove("pick-color-border-gold");
+        } else {
+            parent.classList.add("pick-color-border-gold");
+        }
+    }
+
+    function togglePickColorBorderBlack(element) {
+        var parent = element.parentNode;
+        if (parent.classList.contains("pick-color-border-black")) {
+            parent.classList.remove("pick-color-border-black");
+        } else {
+            parent.classList.add("pick-color-border-black");
+        }
+    }
+
+    function togglePickColorBorderGrey(element) {
+        var parent = element.parentNode;
+        if (parent.classList.contains("pick-color-border-grey")) {
+            parent.classList.remove("pick-color-border-grey");
+        } else {
+            parent.classList.add("pick-color-border-grey");
+        }
+    }
+    </script>
+    <script>
+      (function() {
+        'use strict';
+      
+        function ctrls() {
+          var _this = this;
+      
+          this.counter = 0;
+          this.els = {
+            decrement: document.querySelector('.ctrl__button--decrement'),
+            counter: {
+              container: document.querySelector('.ctrl__counter'),
+              num: document.querySelector('.ctrl__counter-num'),
+              input: document.querySelector('.ctrl__counter-input')
+            },
+            increment: document.querySelector('.ctrl__button--increment')
+          };
+      
+          this.decrement = function() {
+            var counter = _this.getCounter();
+            var nextCounter = (_this.counter > 0) ? --counter : counter;
+            _this.setCounter(nextCounter);
+          };
+      
+          this.increment = function() {
+            var counter = _this.getCounter();
+            var nextCounter = (counter < 9999999999) ? ++counter : counter;
+            _this.setCounter(nextCounter);
+          };
+      
+          this.getCounter = function() {
+            return _this.counter;
+          };
+      
+          this.setCounter = function(nextCounter) {
+            _this.counter = nextCounter;
+          };
+      
+          this.debounce = function(callback) {
+            setTimeout(callback, 100);
+          };
+      
+          this.render = function(hideClassName, visibleClassName) {
+            _this.els.counter.num.classList.add(hideClassName);
+      
+            setTimeout(function() {
+              _this.els.counter.num.innerText = _this.getCounter();
+              _this.els.counter.input.value = _this.getCounter();
+              _this.els.counter.num.classList.add(visibleClassName);
+            }, 100);
+      
+            setTimeout(function() {
+              _this.els.counter.num.classList.remove(hideClassName);
+              _this.els.counter.num.classList.remove(visibleClassName);
+            }, 200);
+          };
+      
+          this.ready = function() {
+            _this.els.decrement.addEventListener('click', function() {
+              _this.debounce(function() {
+                _this.decrement();
+                _this.render('is-decrement-hide', 'is-decrement-visible');
+              });
+            });
+      
+            _this.els.increment.addEventListener('click', function() {
+              _this.debounce(function() {
+                _this.increment();
+                _this.render('is-increment-hide', 'is-increment-visible');
+              });
+            });
+      
+            _this.els.counter.input.addEventListener('input', function(e) {
+              var parseValue = parseInt(e.target.value);
+              if (!isNaN(parseValue) && parseValue >= 0) {
+                _this.setCounter(parseValue);
+                _this.render();
+              }
+            });
+      
+            _this.els.counter.input.addEventListener('focus', function(e) {
+              _this.els.counter.container.classList.add('is-input');
+            });
+      
+            _this.els.counter.input.addEventListener('blur', function(e) {
+              _this.els.counter.container.classList.remove('is-input');
+              _this.render();
+            });
+          };
+        };
+      
+        // init
+        var controls = new ctrls();
+        document.addEventListener('DOMContentLoaded', controls.ready);
+      })();
+      </script>
+</html>
+
+
+<!-- <div>
+                    <button class="accordion">Section 1</button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">Section 2</button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">Section 3</button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div> -->

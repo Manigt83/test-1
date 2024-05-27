@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <link href="./bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./font-awesome.css">
+    <script defer src="./bootstrap.bundle.min.js" ></script>
+    <link rel="stylesheet" href="./bootstrap-icon.css">
+    <!-- <script src="./swiper.js"></script>
+    <script src="./swiper-2.js"></script> -->
+  <link rel="stylesheet" href="./swiper-bundle.min.css">
+  <script src="./swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar flex-wrap py-0 p-0 navbar-expand-lg bg-body-tertiary" style="background-color: #FFFFFF !important; border-bottom :1px solid #21212149;position: fixed;width: 100%;top: 0; z-index: 999;">
+            <div class="post-info-navbar">
+                <p>ارسال رایگان برای سفارشات بیشتر از 500,000 تومان</p>
+            </div>
+            <div class="rate-info-navbar col-12 d-flex px-5 justify-content-center ">
+                <div class="col-4 col d-flex  justify-content-start "><p>0.0/5</p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <div class="col-md-4 col-12 col d-flex justify-content-center "><p>ارسال اکسپرس به تمامی نقاط جهان</p><i class="bi bi-globe"></i></div>
+                <div class="col-4 col d-flex justify-content-end "><p>انجام یک‌روزه حکاکی روی قلم</p><i class="bi bi-pen"></i></div>
+            </div>
+            <div class="container-fluid col-12 m-0 py-2">
+              <!-- <a class="navbar-brand col-4 m-0 p-0" href="#">Navbar</a> -->
+        
+              <div class="icon-nav col-3  m-0 p-0 justify-content-lg-start justify-content-center mobile-nav">
+                <div class="icon-box-nav">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="icon-box-nav">
+                    <i class="bi bi-bag"></i>
+                </div>
+              </div>
+        
+              <div class="col-6 m-0 p-0 justify-content-lg-end justify-content-center mobile-nav">
+                <a class="navbar-brand m-0 p-0" href="./"><img src="./img/logo.svg"></a>
+              </div>
+        
+              <button class="navbar-toggler col-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse col-12 m-0 p-0 px-lg-5 px-0" id="navbarSupportedContent">
+                <div class="icon-nav d-flex col-lg-3 col-12 m-0 p-0 justify-content-lg-start justify-content-center mt-lg-0 mt-3">
+                    <div class="icon-box-nav">
+                        <img src="./img/flag/ir.svg" alt="">
+                    </div>
+                    <div class="icon-box-nav">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <div class="icon-box-nav">
+                        <i class="bi bi-chat"></i>
+                    </div>
+                    <div class="icon-box-nav desktop-nav">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="icon-box-nav desktop-nav">
+                        <i class="bi bi-bag"></i>
+                    </div>
+                </div>
+        
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-6 col-12 p-0 justify-content-center text-center ">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">خانه</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page">برندها</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                        <a class="nav-link" href="./products.html">محصولات</a>
+                        <div class="dropdown-content">
+                          <div class="dropdown-content-inner d-flex flex-wrap col-12 p-0 m-0">
+                            <div class="flex-wrap d-lg-flex d-none col-lg-3 col-12 p-0 m-0">
+                                <img src="./img/image 21.png" alt="" class="d-flex w-100">
+                                <a href="#" class="d-flex mt-3" style="font-size: 12px;"><i class="bi bi-arrow-left"></i>جدیدترین، تورنادو کالیفرنیا ۴۱</a>
+                            </div>
+                            <div class="d-flex flex-wrap content-column col-lg-9 col-12 p-0 m-0 justify-content-end ">
+                                <div class="col-sm-4 col-12 content-column-col p-0 m-0 px-2">
+                                    <P class="content-column-col-header">قلم‌های خطاطی</P>
+                                    <a>قلم‌های فانیتن</a>
+                                    <a>قلم‌های بال‌پوینت</a>
+                                    <a>ست‌های قلم</a>
+                                    <a>قلم‌های رولربال</a>
+                                    <a>قلم‌های خطاطی</a>
+                                    <a>قلم‌های فانیتن</a>
+                                    <a>قلم‌های بال‌پوینت</a>
+                                    <a>ست‌های قلم</a>
+                                    <a href="./products.html" class="d-flex" style="font-size: 12px;"><i class="bi bi-arrow-left"></i>دیدن همه‌ی قلم‌ها</a>
+                                </div>
+                                <div class="col-sm-4 col-12 content-column-col p-0 m-0 px-2">
+                                    <P class="content-column-col-header">قیمت‌ها</P>
+                                    <a>100,000 تومان - 200,000 تومان</a>
+                                    <a>100,000,000 تومان - 200,000,000 تومان</a>
+                                    <a>100,000,000 تومان - 200,000,000 تومان</a>
+                                    <a>100,000,000 تومان - 200,000,000 تومان</a>
+                                    <a>100,000,000 تومان - 200,000,000 تومان</a>
+                                    <a href="#" class="d-flex" style="font-size: 12px;">فروش</a>
+                                </div>
+                                <div class="col-sm-4 col-12 content-column-col p-0 m-0 px-2">
+                                    <P class="content-column-col-header">قلم‌های خطاطی</P>
+                                    <a>قلم‌های فانیتن</a>
+                                    <a>قلم‌های بال‌پوینت</a>
+                                    <a>ست‌های قلم</a>
+                                    <a>قلم‌های رولربال</a>
+                                    <a>قلم‌های خطاطی</a>
+                                    <a>قلم‌های فانیتن</a>
+                                    <a>قلم‌های بال‌پوینت</a>
+                                    <a>ست‌های قلم</a>
+                                    <a href="#" class="d-flex" style="font-size: 12px;"><i class="bi bi-arrow-left"></i>دیدن همه‌ی قلم‌ها</a>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">تماس با ما</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./products.html">اخبار</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="direction: rtl; color: #BA985F;">دست خط من بشناس !</a>
+                  </li>
+                </ul>
+        
+                <div class="d-flex col-lg-3 col-12 m-0 p-0 justify-content-lg-end justify-content-center desktop-nav">
+                    <a class="navbar-brand m-0 p-0" href="./"><img src="./img/logo.svg"></a>
+                </div>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="body">
+            <div class="banner-penheaven">
+                <div class="banner-content">
+                  <p class="banner-content-header">تخفیف‌های بزرگ خودکار پارکر</p>
+                  <p class="banner-content-body">بیش از ۵۰٪ برای طرح‌های ویژه</p>
+                  <div class="banner-content-btn">
+                    <a href=""><i class="bi bi-arrow-left"></i>فروش پارکر</a>
+                  </div>
+                </div>
+                <div class="banner-content-mobile">
+                    <p class="banner-content-header">تخفیف‌های بزرگ خودکار پارکر</p>
+                    <p class="banner-content-body">بیش از ۵۰٪ برای طرح‌های ویژه</p>
+                  </div>
+                  <div class="banner-content-btn-mobile">
+                    <a href=""><i class="bi bi-arrow-left"></i>فروش پارکر</a>
+                </div>
+            </div>
+            <div class="brands-box">
+                <div style="display: flex; flex-direction: column; gap: 24px;">
+                    <div class="d-flex col-12 justify-content-center">
+                        <div class="d-flex col-8">
+                            <p class="brands-box-content text-center m-0">قلم‌هایی با دقت انتخاب شده از برندهای لوکس، که می‌توان آن‌ها را با پیام شخصی حک کرد و در همان روز ارسال کرد.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex col-12 brands-img-content" >
+                        <div class="d-flex col-md-6 col-12 brands-box-img brands-box-img-1">
+                            <div class="brands-box-img-content py-2">
+                                <p class="d-flex justify-content-center">این قلم‌ها رو از دست نده</p>
+                                <p class="d-flex justify-content-center">مجموعه جدید اضافه شده به رترو</p>
+                            </div>
+                        </div>
+                        <div class="d-flex col-md-6 col-12 brands-box-img brands-box-img-2">
+                            <div class="brands-box-img-content py-2" >
+                                <p class="d-flex justify-content-center">همین حالا به فکر باش!</p>
+                                <p class="d-flex justify-content-center">سری سال ۱۴۰۳ رو از دست نده</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-12 px-4 p-md-0">
+                        <div class="col d-flex brands-box-icon"><img src="./img/brand/image 1.png" class="w-100"></div>
+                        <div class="col d-flex brands-box-icon"><img src="./img/brand/image 2.png" alt=""></div>
+                        <div class="col d-flex brands-box-icon"><img src="./img/brand/image 3.png" alt=""></div>
+                        <div class="col d-flex brands-box-icon"><img src="./img/brand/image 4.png" alt=""></div>
+                        <div class="col d-flex brands-box-icon"><img src="./img/brand/image 5.png" alt=""></div>
+                        <div class="col d-flex brands-box-icon"><img src="./img/brand/image 6.png" alt=""></div>
+                        <div class="col d-flex brands-box-icon"><img src="./img/brand/image 7.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a class="more-brands"><i class="bi bi-arrow-left"></i>همه برندها</a>
+                </div>
+            </div>
+            <div class="recommended-box">
+                <div class="d-flex col-12 recommended-row">
+                    <div class="d-flex col-md-4 col-12 flex-wrap flex-column ">
+                        <div class="recommended-img">
+                            <img src="./img/recommended.png" alt="">
+                        </div>
+                        <div class="recommended-content">
+                            <p class="d-flex justify-content-center">همین حالا به فکر باش!</p>
+                            <a class="more-brands"><i class="bi bi-arrow-left"></i>بیشتر بخوانید</a>    
+                        </div>
+                    </div>
+                    <div class="d-flex col-md-4 col-12 flex-wrap flex-column ">
+                        <div class="recommended-img">
+                            <img src="./img/recommended-1.png" alt="">
+                        </div>
+                        <div class="recommended-content">
+                            <p class="d-flex justify-content-center">همین حالا به فکر باش!</p>
+                            <a class="more-brands"><i class="bi bi-arrow-left"></i>همین حالا بخر</a>
+                        </div>
+                    </div>
+                    <div class="d-flex col-md-4 col-12 flex-wrap flex-column ">
+                        <div class="recommended-img">
+                            <img src="./img/recommended-2.png" alt="">
+                        </div>
+                        <div class="recommended-content">
+                            <p class="d-flex justify-content-center">همین حالا به فکر باش!</p>
+                            <a class="more-brands"><i class="bi bi-arrow-left"></i>همین حالا بخر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offers-box">
+                <div class="offers-tab">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                    
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><div class="swiper">
+                          <!-- Additional required wrapper -->
+                          <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><div class="card-box d-flex flex-column">
+                              <div class="w-100 card-img d-flex">
+                                  <img src="./img/product/product1.png" alt="" class="w-100">
+                              </div>
+                              <div class="item-name d-flex">
+                                  <p class="m-0">قلم ویژه Sailor Pro Gear Slim Manyo II Moss Fountain Pen Gift Set</p>
+                              </div>
+                              <div class="card-price d-flex justify-content-end">
+                                  <p class="m-0">100,000تومان</p>
+                              </div>
+                              <div class="color-row d-flex flex-row justify-content-end d-flex">
+                                <div class="color-pick-button-silver d-flex"></div>
+                                <div class="color-pick-button-black d-flex"></div>
+                                <div class="color-pick-button-gold d-flex"></div>
+                              </div>
+                          </div>
+                          </div>
+                              <div class="swiper-slide"><div class="card-box d-flex flex-column">
+                                <div class="w-100 card-img d-flex">
+                                    <img src="./img/product/product1.png" alt="" class="w-100">
+                                </div>
+                                <div class="item-name d-flex">
+                                    <p class="m-0">قلم ویژه Sailor Pro Gear Slim Manyo II Moss Fountain Pen Gift Set</p>
+                                </div>
+                                <div class="card-price d-flex justify-content-end">
+                                    <p class="m-0">100,000تومان</p>
+                                </div>
+                                <div class="color-row d-flex flex-row justify-content-end d-flex">
+                                  <div class="color-pick-button-silver d-flex"></div>
+                                  <div class="color-pick-button-black d-flex"></div>
+                                  <div class="color-pick-button-gold d-flex"></div>
+                                </div>
+                            </div>
+                          </div>
+                            <div class="swiper-slide"><div class="card-box d-flex flex-column">
+                              <div class="w-100 card-img d-flex">
+                                  <img src="./img/product/product1.png" alt="" class="w-100">
+                              </div>
+                              <div class="item-name d-flex">
+                                  <p class="m-0">قلم ویژه Sailor Pro Gear Slim Manyo II Moss Fountain Pen Gift Set</p>
+                              </div>
+                              <div class="card-price d-flex justify-content-end">
+                                  <p class="m-0">100,000تومان</p>
+                              </div>
+                              <div class="color-row d-flex flex-row justify-content-end d-flex">
+                                <div class="color-pick-button-silver d-flex"></div>
+                                <div class="color-pick-button-black d-flex"></div>
+                                <div class="color-pick-button-gold d-flex"></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide"><div class="card-box d-flex flex-column">
+                              <div class="w-100 card-img d-flex">
+                                  <img src="./img/product/product1.png" alt="" class="w-100">
+                              </div>
+                              <div class="item-name d-flex">
+                                  <p class="m-0">قلم ویژه Sailor Pro Gear Slim Manyo II Moss Fountain Pen Gift Set</p>
+                              </div>
+                              <div class="card-price d-flex justify-content-end">
+                                  <p class="m-0">100,000تومان</p>
+                              </div>
+                              <div class="color-row d-flex flex-row justify-content-end d-flex">
+                                <div class="color-pick-button-silver d-flex"></div>
+                                <div class="color-pick-button-black d-flex"></div>
+                                <div class="color-pick-button-gold d-flex"></div>
+                              </div>
+                          </div>
+                        </div>
+                    <div class="swiper-slide"><div class="card-box d-flex flex-column">
+                      <div class="w-100 card-img d-flex">
+                          <img src="./img/product/product1.png" alt="" class="w-100">
+                      </div>
+                      <div class="item-name d-flex">
+                          <p class="m-0">قلم ویژه Sailor Pro Gear Slim Manyo II Moss Fountain Pen Gift Set</p>
+                      </div>
+                      <div class="card-price d-flex justify-content-end">
+                          <p class="m-0">100,000تومان</p>
+                      </div>
+                      <div class="color-row d-flex flex-row justify-content-end d-flex">
+                        <div class="color-pick-button-silver d-flex"></div>
+                        <div class="color-pick-button-black d-flex"></div>
+                        <div class="color-pick-button-gold d-flex"></div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"><div class="card-box d-flex flex-column">
+                  <div class="w-100 card-img d-flex">
+                      <img src="./img/product/product1.png" alt="" class="w-100">
+                  </div>
+                  <div class="item-name d-flex">
+                      <p class="m-0">قلم ویژه Sailor Pro Gear Slim Manyo II Moss Fountain Pen Gift Set</p>
+                  </div>
+                  <div class="card-price d-flex justify-content-end">
+                      <p class="m-0">3100,000تومان</p>
+                  </div>
+                  <div class="color-row d-flex flex-row justify-content-end d-flex">
+                    <div class="color-pick-button-silver d-flex"></div>
+                    <div class="color-pick-button-black d-flex"></div>
+                    <div class="color-pick-button-gold d-flex"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide"><div class="card-box d-flex flex-column">
+              <div class="w-100 card-img d-flex">
+                  <img src="./img/product/product1.png" alt="" class="w-100">
+              </div>
+              <div class="item-name d-flex">
+                  <p class="m-0">قلم ویژه Sailor Pro Gear Slim Manyo II Moss Fountain Pen Gift Set</p>
+              </div>
+              <div class="card-price d-flex justify-content-end">
+                  <p class="m-0">200,000تومان</p>
+              </div>
+              <div class="color-row d-flex flex-row justify-content-end d-flex">
+                <div class="color-pick-button-silver d-flex"></div>
+                <div class="color-pick-button-black d-flex"></div>
+                <div class="color-pick-button-gold d-flex"></div>
+              </div>
+          </div>
+        </div>
+                            
+                          </div>
+
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+                        
+                        </div></div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
+                      </div>
+                </div>
+            </div>
+            <div class="Reviews-box">
+              <div class="d-flex col-12 justify-content-center">
+                <div class="d-flex col-8 justify-content-center">
+                    <p class="Reviews-box-content text-center m-0">What Our Customer Say</p>
+                </div>
+              </div>
+            </div>
+            <div class="Newsletter-box">
+              <div class="d-flex col-12 justify-content-center">
+                <div class="d-flex col-md-8 col-12 justify-content-center flex-column Newsletter-box-content">
+                    <p class="d-flex m-0 justify-content-center">به خبرنامه ما بپیوندید</p>
+                    <p class="d-flex m-0 justify-content-center" style="direction: rtl; ">جدیدترین ترندها و خودکار ها بسته به روحیه و شخصیت بیابید.</p>
+                    <div class="control d-flex m-0 justify-content-center">
+                      <input type="submit" id="submit" value="ثبت نام">
+                      <input type="text" id="fname" placeholder="ایمیل خود را وارد کنید">
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+      
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdowns = document.querySelectorAll(".dropdown");
+    
+      dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener("mouseenter", function() {
+          this.querySelector(".dropdown-content").classList.add("show-drowp");
+        });
+    
+        dropdown.addEventListener("mouseleave", function() {
+          this.querySelector(".dropdown-content").classList.remove("show-drowp");
+        });
+      });
+    });
+
+    var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+triggerTabList.forEach(function (triggerEl) {
+  var tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', function (event) {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+
+var triggerEl = document.querySelector('#myTab a[href="#profile"]')
+bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+
+var triggerFirstTabEl = document.querySelector('#myTab li:first-child a')
+bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
+
+    
+</script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Default parameters
+  slidesPerView: 4,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+
+    480:{
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    680: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})
+
+</script>
+</html>
